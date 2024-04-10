@@ -1,0 +1,158 @@
+.contPrinc {
+  width: 100vw;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.buttonAvanzar {
+  background-color: white;
+  position: fixed;
+  bottom: 3rem;
+  width: 100%;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  background-color: #858383;
+  color: white;
+  font-size: medium;
+}
+.navBar {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.opcionNavBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressBar {
+  width: 90%;
+  height: 15px;
+  border: 1px solid rgb(130, 128, 128);
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.especialidad {
+  width: 20%;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.contReservas {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categorias {
+  width: 90%;
+  border: 1px solid rgb(130, 128, 128);
+}
+.categorias h4 {
+  padding: 5px;
+}
+.categorias ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.categorias ul li {
+  width: 95%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+}
+.opcServ {
+  width: 90%;
+  margin-bottom: 10px;
+}
+.opcServ h5 {
+  text-align: start;
+  width: 100%;
+  font-size: 15px;
+  padding: 0;
+}
+.opcServ span {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.opcServ span button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.contHorarios {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.horarios {
+  width: 90%;
+  border: 1px solid rgb(130, 128, 128);
+}
+.listHora {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.horaTurno {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
+.horaTurno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contMisTurnos {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
