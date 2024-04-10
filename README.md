@@ -1,8 +1,9 @@
-# React + Vite
+Challenge Planify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desarrollador: Rios Leandro
 
-Currently, two official plugins are available:
+*Este proyecto se desarrollo con react y javascript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*Los datos para realizar las reservas de turno en la app se obtubieron simulando la respuesta de una api obteniendo los datos desde un json dentro del fichero data que esta en public.
+
+*El proyecto se ejecuta con el comando "npm run dev"
