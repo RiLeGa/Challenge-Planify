@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 function Categorias({servicioSeleccionado}) {
     const [categoriaActiva, setCategoriaActiva] = useState(null);
     const [categorias, setCategorias] = useState([]);
-    const url = 'src/data/servicios.json';
+    const url = 'data/servicios.json';
 
     const fetchApi = async () => {
         try {
@@ -64,10 +64,10 @@ function Categorias({servicioSeleccionado}) {
                         {categoriaActiva === categoria &&
                         <ul className='opcServ'>
                             {categoriasAgrupadas[categoria].map((cat, subIndex) => (
-                                <>
+                                <div className="contServ">
                                     <h5>{cat.name}</h5>
                                     <span key={subIndex}> <p>{cat.description}</p> <button onClick={()=>seleccionarTurno(cat.name)}>Seleccionar</button>  </span>                                  
-                                </>
+                                </div>
                             ))}
                         </ul>
                         }

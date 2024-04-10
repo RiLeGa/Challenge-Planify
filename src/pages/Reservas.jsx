@@ -17,7 +17,7 @@ function Reservas() {
     <>
     {
       progreso <= 30 ?
-      <h4 style={{width:"90%"}}>Seleccionar servicio</h4>
+      <h4 style={{width:"90%", marginTop:"20px"}}>Seleccionar servicio</h4>
       :
         progreso <= 75 ? 
         <h4 style={{width:"90%"}}>Seleccionar horario</h4>

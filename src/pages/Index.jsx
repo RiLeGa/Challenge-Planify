@@ -1,13 +1,18 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
-import Categorias from '../components/Categorias'
-import ProgressBar from '../components/ProgressBar'
 
 function Index() {
   return (
-    <div className='contIndex'>
-        
-    </div>
+    <>
+      <h1 style={{textAlign: "center", marginTop:"50px"}}>Bienvenid@!</h1>
+      <div className='contIndex'>
+          <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", alignItems:"center", height:"150px"}}>
+            <h2 style={{textAlign: "center", fontSize:"15px", width: "50%"}}>Podras elegir un turno disponible haciendo click en reservar</h2>
+          </div>
+          <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", alignItems:"center", height:"150px"}}>
+            <h2 style={{textAlign: "center", fontSize:"15px", width: "50%"}}>Podras visualizar tus turnos haciendo click en mis turnos</h2> 
+          </div>
+      </div>
+    </>
   )
 }
 

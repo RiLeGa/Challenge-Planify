@@ -19,4 +19,16 @@ a{
 li {
   list-style: none;
 }
+.contIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 65vh;
+}
+.contIndex i {
+  transform: rotate(90deg);
+}
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 function BotoneraAvanzar({progreso, siguienteEtapa, etapaAnterior, confirmar}) {
 
@@ -15,11 +15,18 @@ function BotoneraAvanzar({progreso, siguienteEtapa, etapaAnterior, confirmar}) {
 
  const confirmarTurno = () => {
     confirmar()
-    alert("Turno confirmado")
-    window.location.reload();
+    Swal.fire({
+      position: "top",
+      icon: "success",
+      title: "Turno confirmado",
+      showConfirmButton: false,
+      timer: 1500,
+      didClose: () => {
+        window.location.href = "/";
+    }
+    })
  }
 
- console.log("Progreso:", progreso); // Agrega este console.log para depurar
   return (
     <>
     

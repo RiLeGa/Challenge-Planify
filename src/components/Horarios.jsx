@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 function Horarios({horarioSeleccionado}) {
-    const url = 'src/data/horarios.json';
+    const url = 'data/horarios.json';
   const [horarios, setHorarios] = useState([]);
 
     const fetchApi = async () => {
@@ -15,8 +15,9 @@ function Horarios({horarioSeleccionado}) {
         }
     };
     
-    const seleccionarHorario = (horario) => {
+    const seleccionarHorario = (horario, fecha) => {
         sessionStorage.setItem("horarioDelTurno", horario)
+        sessionStorage.setItem("fechaDeTurno", fecha)
         horarioSeleccionado()
     }
     
@@ -33,7 +34,7 @@ function Horarios({horarioSeleccionado}) {
               <h4>{horarios.date}</h4>
               <ul className='listHora'>
                { horarios.availableTimeslots?.map((hora, index) => 
-                <button className='horaTurno' key={index} onClick={()=>seleccionarHorario(hora)} >
+                <button className='horaTurno' key={index} onClick={()=>seleccionarHorario(hora, horarios.date)} >
                     <span>{hora}</span>
                 </button>
                )}
