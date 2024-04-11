@@ -1,17 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 function ProgressBar({progreso}) {
-  console.log("Progreso:", progreso); // Agrega este console.log para depurar
 
-  useEffect(() => {
-    const especialidadSeleccionada = sessionStorage.getItem('especialidadSeleccionada');
-    const horarioDelTurno = sessionStorage.getItem('horarioDelTurno');
-    if (especialidadSeleccionada && horarioDelTurno) {
-        console.log("Se ha recuperado la especialidad seleccionada:", especialidadSeleccionada);
-        console.log("En el siguiente horario:", horarioDelTurno);
-    }
-},[]);
-  
   return (
         <>
           
